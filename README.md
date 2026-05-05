@@ -1,18 +1,19 @@
-# Orien-dep-creep: Orientation-Dependent Creep Life Evaluation
+# Ori-dependent-creep: Orientation-Dependent Creep Life Evaluation of Ni- based singel crystal superalloys.
 
 This repository contains a specialized **Physics-Informed Neural Network (PINN)** framework designed for evaluating and predicting the creep rupture life of single-crystal Nickel-based superalloys, with a specific focus on orientation dependency.
 
-## 🚀 Overview
+## Overview
 Predicting the creep life of superalloys is a critical challenge in aerospace and power generation. This project implements a machine learning approach that incorporates metallurgical physics into the neural network architecture to improve prediction accuracy across different crystallographic orientations and stress-temperature regimes.
 
 ## 🛠 Key Features
+*   **Machine Learning Baselines:** Used to evaluate the performance of our model compared to other baselines.
 *   **Physics-Informed Architecture:** Integrates physical constraints (like Larson-Miller Parameters and Resolved Shear Stress) into the loss function.
 *   **Orientation Sensitivity:** Handles anisotropic behavior by projecting stress tensors onto slip systems.
 *   **SHAP Explainability:** Includes SHAP (SHapley Additive exPlanations) analysis to interpret model decisions and feature importance.
 *   **Robust Validation:** Features k-fold cross-validation and internal validation on unseen experimental datasets.
 
 ## 📂 Project Structure
-*   `src/`: Core Python scripts for model training (`codePINN.py`), SHAP analysis (`SHAPPINN.py`), and validation (`validation.py`).
+*   `src/`: Core Python scripts for baseline run('allbaselines.py'), model training (`codePINN.py`), SHAP analysis (`SHAPPINN.py`), and validation (`validation.py`).
 *   `data/`: Processed datasets and experimental creep data.
 *   `output/`: Model performance metrics, parity plots, and feature importance charts.
 *   `papers/`: Key research literature on Ni-based superalloys and creep modeling.
@@ -36,5 +37,4 @@ Predicting the creep life of superalloys is a critical challenge in aerospace an
    python src/SHAPPINN.py
    ```
 
-## 📄 References
-The methodology is based on research into orientation-dependent creep behavior in CMSX-4 and other Nickel-based superalloys, as documented in the provided `papers/` directory.
+
