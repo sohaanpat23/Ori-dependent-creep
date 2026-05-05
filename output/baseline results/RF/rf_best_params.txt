@@ -1,0 +1,39 @@
+Model: RF
+Best CV score, neg MAE: -0.25856194065161364
+
+Feature columns:
+  Inv_T_K
+  Gamma_prime_size
+  L
+  G
+  SFE
+  Misfit
+  cos_001
+  cos_011
+  MultislipPropensity_110
+  Log_RSS_110
+  stress_MPa
+
+Best params:
+rf__bootstrap: True
+rf__max_depth: None
+rf__max_features: 0.7
+rf__min_samples_leaf: 1
+rf__min_samples_split: 2
+rf__n_estimators: 400
+
+Overall OOF metrics on Train/CV pool:
+MAE_log10h: 0.259414740916202
+RMSE_log10h: 0.3452047050863195
+R2_log10h: 0.7462490281011691
+MedianAPE_%: 41.306736057370216
+MeanAPE_%: 83.0640871694539
+
+20-point internal validation metrics, fold-ensemble prediction:
+MAE_log10h: 0.19569975234089318
+RMSE_log10h: 0.26574897463021685
+R2_log10h: 0.7547515241823285
+MedianAPE_%: 32.73584601680399
+MeanAPE_%: 71.56384145041439
+n_holdout: 20
+MeanEnsembleSTD_log10h: 0.050803917839343016

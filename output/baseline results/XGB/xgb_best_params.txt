@@ -1,0 +1,40 @@
+Model: XGB
+Best CV score, neg MAE: -0.2508886951245534
+
+Feature columns:
+  Inv_T_K
+  Gamma_prime_size
+  L
+  G
+  SFE
+  Misfit
+  cos_001
+  cos_011
+  MultislipPropensity_110
+  Log_RSS_110
+  stress_MPa
+
+Best params:
+xgb__colsample_bytree: 1.0
+xgb__learning_rate: 0.1
+xgb__max_depth: 4
+xgb__min_child_weight: 1
+xgb__n_estimators: 200
+xgb__reg_lambda: 3.0
+xgb__subsample: 0.8
+
+Overall OOF metrics on Train/CV pool:
+MAE_log10h: 0.25375296067337716
+RMSE_log10h: 0.3432238761593821
+R2_log10h: 0.74915278439072
+MedianAPE_%: 38.90371378749632
+MeanAPE_%: 77.6943597781877
+
+20-point internal validation metrics, fold-ensemble prediction:
+MAE_log10h: 0.21274145957221932
+RMSE_log10h: 0.27324741541586506
+R2_log10h: 0.7407162809082203
+MedianAPE_%: 37.92336411355811
+MeanAPE_%: 75.92109246851352
+n_holdout: 20
+MeanEnsembleSTD_log10h: 0.07974760979413986

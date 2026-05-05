@@ -1,0 +1,37 @@
+Model: SVR
+Best CV score, neg MAE: -0.1885197718442398
+
+Feature columns:
+  Inv_T_K
+  Gamma_prime_size
+  L
+  G
+  SFE
+  Misfit
+  cos_001
+  cos_011
+  MultislipPropensity_110
+  Log_RSS_110
+  stress_MPa
+
+Best params:
+svr__C: 10
+svr__epsilon: 0.03
+svr__gamma: 0.1
+svr__kernel: rbf
+
+Overall OOF metrics on Train/CV pool:
+MAE_log10h: 0.18805272163264877
+RMSE_log10h: 0.2577953104481939
+R2_log10h: 0.8584843967161476
+MedianAPE_%: 27.747731307307667
+MeanAPE_%: 50.45135643955485
+
+20-point internal validation metrics, fold-ensemble prediction:
+MAE_log10h: 0.18757622739802615
+RMSE_log10h: 0.24650450822633801
+R2_log10h: 0.7889852301071452
+MedianAPE_%: 37.27075947825605
+MeanAPE_%: 61.72223275697102
+n_holdout: 20
+MeanEnsembleSTD_log10h: 0.044730049726994334
